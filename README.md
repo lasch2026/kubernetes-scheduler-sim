@@ -44,4 +44,5 @@ Esta solução adiciona **espaço em disco** como terceira métrica, evitando
 alocar PODs em Workers que teriam CPU e memória disponíveis mas 
 estariam sem espaço em disco — situação real em clusters de produção.
 
-
+Vídeo de Apresentação
+[Assista no YouTube](https://youtu.be/_5VM91LS8nk)
