@@ -10,14 +10,10 @@ Simulação do escalonador de PODs do Kubernetes em C, utilizando **threads POSI
 e escalona 15 PODs usando três métricas de alocação.
 
 Arquitetura
-MASTER (thread principal)
-│
-├── Thread Escalonador
-│     └── Algoritmo de score por recursos livres
-│
-├── Worker-1: 8 CPU | 8192 MB RAM | 100 GB Disco
-├── Worker-2: 4 CPU | 4096 MB RAM |  50 GB Disco
-└── Worker-3: 16 CPU | 16384 MB RAM | 200 GB Disco
+MASTER (thread principal) 
+-> Thread Escalonador (Algoritmo de score por recursos livres)
+-> Worker-1: 8 CPU | 8192 MB RAM | 100 GB Disco
+-> Worker-2: 4 CPU | 4096 MB RAM |  50 GB Disco (Worker-3: 16 CPU | 16384 MB RAM | 200 GB Disco)
 
 Métricas de Escalonamento
 
